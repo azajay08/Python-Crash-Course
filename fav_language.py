@@ -31,6 +31,7 @@ fav_languages = {
 	'elliot': 'ruby',
 	'miro': 'c',
 	'lotta': 'ruby',
+	'david': 'java',
 	}
 
 language = fav_languages['lotta'].title()
@@ -45,3 +46,5 @@ for name, language in fav_languages.items():
 print('\n\n')
 for name in fav_languages.keys():
 	print(name.title())
+
+#### 
