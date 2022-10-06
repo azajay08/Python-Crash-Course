@@ -56,8 +56,15 @@ fav_lang = {
 	'adam': ['c', 'swift', 'python'],
 	'elliot': ['html'],
 }
+
+# added and if statment for signle item grammar
+
 for name, languages in fav_lang.items():
-	print(f"\n{name.title()}'s favourite languages are:")
+	if len(languages) < 2:
+		lan = "language is"
+	else:
+		lan = "languages are"
+	print(f"\n{name.title()}'s favourite {lan}:")
 	for language in languages:
 		if language == 'html' or language == 'c':
 			language = f"{language.upper()}"
