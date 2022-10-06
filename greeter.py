@@ -15,3 +15,11 @@ if age >= 30:
 	print("\nOooof, getting old!")
 else:
 	print("\nAhh, still a spring chicken")
+
+#########3
+
+def greet_user(username):
+	""""Display a simple greeting"""
+	print(f"\nHello {username.title()}!\n")
+
+greet_user('aaron')
