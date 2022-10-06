@@ -7,7 +7,17 @@ prompt += "\nEnter 'quit' and I will quit it. "
 
 message = " "
 
-while message != 'quit':
+active = True
+while active:
 	message = input(prompt)
-	if message != 'quit':
+	if message == 'quit':
+		active = False
+	else:
 		print(message)
+
+
+# True and False are flags
+
+# can use break like C
+
+# continue will just continue the loop
