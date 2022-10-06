@@ -46,5 +46,22 @@ for name, language in fav_languages.items():
 print('\n\n')
 for name in fav_languages.keys():
 	print(name.title())
+print("\n\n----****----\n\n")
 
 #### 
+
+fav_lang = {
+	'jen': ['python', 'ruby', 'c#'],
+	'kayla': ['c', 'haskell'],
+	'adam': ['c', 'swift', 'python'],
+	'elliot': ['html'],
+}
+for name, languages in fav_lang.items():
+	print(f"\n{name.title()}'s favourite languages are:")
+	for language in languages:
+		if language == 'html' or language == 'c':
+			language = f"{language.upper()}"
+			print(f"\t{language}")
+		else:
+			print(f"\t{language.title()}")
+
