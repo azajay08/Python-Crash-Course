@@ -1,6 +1,3 @@
-from multiprocessing.sharedctypes import Value
-
-
 user_o = {
 	'username': 'azajay08',
 	'first name': 'aaron',
