@@ -17,3 +17,14 @@ describe_pet('hamster', 'lenny')
 
 ## really handy, can arrange function whatever way with parameter call
 describe_pet(pet_name='lenny', animal_type='hamster')
+
+def describe_dog(pet_name, animal_type='dog'):
+	"""Displays dog name"""
+	print(f"\nI have a {animal_type}.")
+	print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_dog(pet_name='willie')
+
+describe_dog('rocky')
+
+## an explicit parameter will overide the default 'dog'
